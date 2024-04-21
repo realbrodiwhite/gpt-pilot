@@ -1,4 +1,4 @@
-from colorama import Fore, Style as ColoramaStyle, init
+23from colorama import Fore, Style as ColoramaStyle, init
 from enum import Enum
 from questionary import Style
 
