@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "request": "launch",
+            "name": "Launch Electron",
+            "type": "node",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron",
+            "windows": {
+                "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/electron.cmd"
+            },
+            "args": ["."],
+            "outputCapture": "std",
+            "sourceMaps": true
+        },
+        {
+            "name": "Launch React App",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}/src"
+        },
+        {
+            "name": "Launch React Native App",
+            "request": "launch",
+            "type": "chrome",
+            "cwd": "${workspaceFolder}"
+        }
+    ],
+    "port": 3000
+}
